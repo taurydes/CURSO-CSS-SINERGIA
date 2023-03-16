@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#e8e8e8;
+}
+
+
+.menu{
+    list-style: none; /*quitamos viñetas*/
+    padding: 0%;/*quitar la sangría*/
+    background-color: #092327;/*Color Fondo*/
+    width: 90%;/*en 90% para que no ocupe todo el ancho de la pág*/
+    max-width: 1000px;/*definiendo el ancho de crecimento*/
+    margin: 20px auto;/* de esta menera hacemos que este en el medio siempre*/
+}
+
+.menu li{
+    text-align: center;
+    display: inline-block;
+}
+.menu li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    width: 150px;
+}
+

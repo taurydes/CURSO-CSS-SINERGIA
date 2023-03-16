@@ -1,0 +1,19 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;/* acá estamos estacleciendo una tipografía, se agg 3 xq sino carga una pasara a la siguiente*/
+    font-size: 50px;
+    font-style: italic;/* Para cambiar el estilo de fuente*/
+    font-weight: normal; /*este sirve para cambiar de negrita bold a normal*/
+    color: blueviolet;/*color de la letra*/
+    text-align: center;/* para ubicar el texto dentro del contenedor que tenga*/
+    text-decoration: underline;/* agregando decoraciones*/
+    text-transform: capitalize;/*ESto se hace para convertir nuestro encabezado en mayusculas: uppercase y minusculas con lowercase */
+    letter-spacing: 10px;/* esto para cambiar el espaciado entre cada letra*/
+  
+}
+/*Podemos ayudarnos con la pagina googleFonts para ver muchos tios de letras que podemos usar, capitalize con esto hacemos que cada palabra comience con mayuscula */
+
+p{
+    text-transform: capitalize;/*cada palabra comienza en mayusculas*/
+    letter-spacing: 3px;/* esto para cambiar el espaciado entre cada letra*/
+    line-height: 30px;/*estqa propiedad controla el espaciado entre las lineas*/
+}

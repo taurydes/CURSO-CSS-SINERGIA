@@ -1,0 +1,182 @@
+.texto{
+   /*text-shadow: 10px 1px 5px #000;/* el primero atributo es en X, el segundo es en Y y el tercero es el nivel de opacodad, mientras mas bajo pas opaco*/
+    /* text-shadow: 5px 2px 10px rgb(18, 211, 163); */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 90px;
+    color: black;
+
+}
+body{
+    background: linear-gradient(0deg, rgb(159, 206, 228), rgb(64, 73, 64) 40%, rgb(224, 109, 109));
+    background-repeat: no-repeat;
+    background-size: 250%;
+}
+html {/*con esta etiqueta hacemos q el html tenga el 2500% del tamaño del navegador*/
+    height: 250%;
+    width: 100%;
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    box-shadow: 2px 0 20px black;/*Para dar sombras a las cajas funciona igual text-shadow*/
+    border-radius: 50%;
+    padding: 10px;
+    border: solid rgb(102, 98, 98) 1px;
+    opacity: 0.7;
+
+}
+.caja2{
+    width: 180px;
+    height: 180px;
+    background: url(../img/fondo2.jpg);
+    background-size: 300px; /*tamaño del fondo*/
+    box-shadow: 2px 0 20px black;/*Para dar sombras a las cajas funciona igual text-shadow*/
+    opacity: 0.7;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+.caja:hover{
+    opacity: 1;
+    border: solid rgb(255, 255, 255) 1px;
+    
+}
+.caja2,.caja:hover{
+    opacity: 1;
+    border: none;    
+}
+
+h2,h1,h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top:10%;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    z-index: 2;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+.otro{
+    display: inline-block;
+    margin-left: 20px; 
+    margin-right: 20px;  
+    vertical-align: top /* esto es para alinear todas las imagenes con el top*/;
+    
+}
+.buscador{
+    display: inline-block;
+    width: 600px;
+    height: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+}
+.menu{
+    position: relative;
+    margin: 20px auto;
+}
+.container{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(7, 7, 7, 0.308);
+    position: relative;
+    border-radius: 9px;
+}
+.entrada{
+    display: block;
+    margin: 10px;
+    margin-left: 15%;
+    text-align: center;
+    width: 70%;
+    height: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.fecha{
+    display: block;
+    position: relative;
+    margin-left: 64.7%;
+    margin-top: -30px;
+    text-align: center;
+    height: 20px;
+    font-size: 20px;
+}
+.label{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    top: -2px;
+    height: 20px;
+    font-size: 20px;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+.marcador{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    left: 60%;
+    height: 20px;
+    font-size: 20px;
+    width: 40px;
+}
+.seleccionador{
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    left: 45%;
+    height: 20px;
+    font-size: 20px;
+    width: 300px;
+    height: 30px;
+}
+.radio{
+    position: relative;
+    margin: 10px;
+    top: -60px;
+}
+.genero{
+    position: relative;
+    margin: 10px;
+    margin-right: 0;
+}
+.btn{
+    position: relative;
+    background: rgb(44, 10, 83);
+    color: #fff;   
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0 10px;
+    top: -80px;
+    left: 40%;
+    }
+.btn:hover{
+    opacity: 0.8;
+}
+.extra-big{
+    font-size: 20px;
+}
+.naranja{
+    background: rgb(243,112,4);
+}
+.border2{
+    border-radius: 5px;/* sirve para redondear los bordes de un elemento*/
+}
+.padre{
+    display: grid;
+    place-content: center;
+}
+

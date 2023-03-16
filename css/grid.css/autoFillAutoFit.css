@@ -1,0 +1,8 @@
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));/*Haciendo responsive*/
+    /*para solucionar el problema de que cuando acerco se sale la ultima columna agregamos al inicio del repeat la funció autoFIll*/
+    /*con auto-fill el agrega un espacio automatico a la derecha siempre(con el auto-fill no sigue los parametros del minmax())
+      con auto-fit no agerga ningun espacio sino que toma ese como el topo  */
+}

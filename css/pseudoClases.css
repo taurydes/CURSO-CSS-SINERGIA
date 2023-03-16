@@ -1,0 +1,56 @@
+/* APLICANDO pseudoclases a los parrafos*/
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    background-color: #4357ad;
+    padding: 20px 30px;
+    display: inline-block;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover{/*pseudoClase muy conocida*/
+    background-color: #009ddc;
+    padding: 25px 35px;
+}
+
+a:active{/*pseudoclase que se activa cuando oprimimos click y esta activo el evento*/
+    background-color: black;
+}
+
+a:visited{/*para saber cuando hemos visitado un elemento*/
+    /* background-color: #ccc; */
+}
+
+div{
+    width: 500px;
+}
+
+div p:hover{
+    background-color: black;
+    color: #fff;
+    
+}
+
+div p::first-line{/*con esta propiedad seleccionamos la primera linea*/
+    
+    background-color: #3a3a3a;
+    color: beige;
+    font-size: 20px;
+}
+
+div p:nth-child(){/*con esta pseudoclase podemos ubicar un elemento dentro de varios, en este caso el segundo parrafo*/
+    background-color: aqua;
+    color: #ff0000;
+    padding: 10px; 
+}
+div p::first-letter{
+    color: chartreuse;
+    font-weight: bold;
+    font-size: 20px;
+}

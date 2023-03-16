@@ -1,0 +1,70 @@
+/*FLEXBOX es una Propiedad nueva de css es un modulo de caja flexible diseñado con un metodo unidimensional de layaout
+y como un metodo que puede ayudar a distribuir el especio de una interfaz y mejorar la capacidad de alineación
+*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    width: 80%;
+    max-width: 700px;
+    height: 500px;
+    background-color: #212d40;
+    display: flex;/*Con esto habilitamos el flexbox*/
+    flex-direction: row;/*esta se usa para ver la dirección está row, colum, colum-reverse,row.reverse*/
+    flex-wrap: wrap;/*esta propiedad ayuda a que los elementos hijos que estén dentro del padre al quedarse sin espacio el contenedor den un salto de línea, por defecto viene en no wrap*/
+   
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #FFF;
+    /* order:2;con esto cambiamos la posición como si fuese un array */
+    /* flex-grow: 1;con esta propiedad se aprovecha todo el espacio sobrante que tenga alrededor */
+    flex-shrink: 0;/*con esto le damos una especie de min-width*/
+    flex-basis: 200px;/* para dar un valor al iniciar un elemento, trabajan dependiendo del ancho o alto dependiendo del padre*/
+}
+
+.tres {
+    order: 3;/*acepta del 1 al ..... mientras más pequñeño va primero*/
+    flex-grow: 8;/*con esta propiedad se aprovecha todo el espacio sobrante que tenga alrededor*/
+    
+}
+.dos{
+    order: 1;
+    flex-grow: 1;/*con esta propiedad se aprovecha todo el espacio sobrante que tenga alrededor*/
+
+}
+
+/*
+===============================================
+Propiedades de los Elementos hijo
+===============================================
+- order:;
+
+-flox-grow:;
+Acepta un numero que servira de proporcion apra hacer crecer el elemento en relacion a otros.
+
+si todos los elementos tienen flex-grow 1 el espacio restante se distribuira entre los elementos
+
+-flex-shrink:;
+Define la habilidad de n elemento para hacerse más pequeño.
+
+por defecto todos se pueden hacer más pequeños pero si le ponemos flex-shrink 0 el elemento no podra ser más pequeño que su ancho
+
+-flex-basis:;
+Nos permite especidifcar el valor inicial que tendrá un elemento.
+*/

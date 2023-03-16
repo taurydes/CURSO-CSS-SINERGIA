@@ -1,0 +1,46 @@
+/*FLEXBOX es una Propiedad nueva de css es un modulo de caja flexible diseñado con un metodo unidimensional de layaout
+y como un metodo que puede ayudar a distribuir el especio de una interfaz y mejorar la capacidad de alineación
+*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    width: 80%;
+    max-width: 700px;
+    height: 500px;
+    background-color: #212d40;
+    display: flex;/*Con esto habilitamos el flexbox*/
+    flex-direction: row;/*esta se usa para ver la dirección está row, colum, colum-reverse,row.reverse*/
+    flex-wrap: wrap;/*esta propiedad ayuda a que los elementos hijos que estén dentro del padre al quedarse sin espacio el contenedor den un salto de línea, por defecto viene en no wrap*/
+    /*flex-flow: row wrap;*/ /*esta propieda engloba las dos anterios en una sola*/
+
+    /*justify-content: space-around;/*Propiedad para centrar o alinear,center (medio), star(izquierda), end(derecha, space-between(espacio proporcional entre los otros elementos), space-around(espacio proporcional entre cajas mas pequeño al anterior) */
+
+    align-items: baseline;/*para centrar en el eje Y,flex-start (arriba), flex-end (abajo) y baseline(), para la practica descomentar el tamaño del contenedor padre*/
+    /*el align-items solo funciona con una fila */
+    align-content: center;/*esta funciona con todo el contenido*/
+}
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: #f79256;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+    color: #FFF;
+
+}
+.dos{
+    font-size: 70px;
+}
+/*podríamos hacer lo mismo que hace el flex con un float left en el hijo, pero desaparece el fondo, para reparar esto colocamos en el padre la propiedad overflow:hidden y se resuelve*/

@@ -1,0 +1,45 @@
+ul{
+    list-style: square;
+    border: solid black ;
+    list-style-image: url(../img/etilista.png);/*para colocar iconos en nuestras etiquetas*/
+        
+}
+
+ol{
+    list-style: upper-roman;
+}
+
+.menu{
+    background-color: #4357ad;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px;
+    color: rgb(247, 245, 245);
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+.menu li a:hover{
+    background-color: #4888d6;
+}
+
+
+/* 
+Gráficos:
+list-style: none | disc | circle | square
+
+Numericos:
+list-style: decimal | decimal-leading-zeo | lower-roman | upper-roman | lower-latin | upper-latin
+
+una página para buscar tios de viñetas sería flaticon
+
+https://www.flaticon.es/
+
+*/

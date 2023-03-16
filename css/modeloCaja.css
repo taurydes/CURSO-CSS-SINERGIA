@@ -1,0 +1,21 @@
+.caja{
+    width: 150px;
+    /* height: 150px; *//*si no colocamos ancho ni alto, el tamaño dependería del contenido dentro del div */
+    background-color: black;
+    border: 2px solid rgb(238, 0, 0);
+    padding: 20px;
+}
+
+#referencia{
+   margin: 10px 80% 50% 20%;
+   border: 2px solid rgb(238, 0, 0);
+
+}
+
+*{/* con esto podemos hacer que el margín de la pág completa sea 0*/
+    margin: 0;
+
+}
+p{
+    color: greenyellow;
+}

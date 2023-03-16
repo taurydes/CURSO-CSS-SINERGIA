@@ -1,0 +1,27 @@
+a{
+    color: rgb(2, 2, 2);
+    font-size: 80px;
+    text-decoration: none; /* quitamos la linea por debajo del texto*/
+    display: block;
+}
+
+/*pseudoclase */
+a:hover{ /*con esta propiedad de hover hacemos que tenga estas reglas css cuando el mouse este encima de el elemento*/
+    background: rgb(108, 161, 185);/* color de FONDO*/
+    color: rgb(212, 17, 17);/*color de texto*/
+    text-decoration: underline;/*agregar linea se dubrayado, solo funciona con el hover o cambiando las etiquetas de enlace a*/
+}
+
+a:visited{/*Con esta propiedad podemos ver que enlaces hemos visitado anteriormente y cambiar sus reglas*/
+    color: aqua;
+}
+
+a:link{/*para vert los enlaces que aún no hemos vistado*/
+
+    color: darkmagenta;
+}
+
+a:active{/*esta clase se aplica cuando un evento esté activo, por ejemplo cuando hagamos clic y estemos presionado*/
+    color: darkgreen;
+    font-size: 70px;
+}

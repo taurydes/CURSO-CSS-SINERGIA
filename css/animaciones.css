@@ -1,0 +1,46 @@
+@keyframes colores{
+    /* from{background-color: #9eb3c2;}
+    to{background-color: #21295c;} */
+    /*para que funcione tenemos que asignarle el nombre del keyframes a la regla de css*/
+    0%{background-color: #9eb3c2;}
+    25%{background-color: #1c7293; width: 300px;}
+    50%{background-color: #065a82;width: 400px;}
+    75%{background-color: #1b3b6f;width: 300px;}
+    100%{background-color: #9eb3c2;width: 200px;}
+    /*Para que no se vea el salto y corte muy fuerte al final vamos a colocar el color principal*/
+}
+
+@keyframes movimiento{
+    0%{transform: translate(0px);}
+    50%{transform: translate(500px);}
+    100%{transform: translate(0px);}
+}
+.caja{
+    width: 200px;
+    height: 200px;
+    background-color: #9eb3c2;
+    /* animation-name: colores , movimiento; *//*si separo con , podemos agregar varias*/
+    /* animation-duration: 5s;
+    animation-iteration-count: infinite; */
+    /*agregando 3 en una */
+    animation: movimiento 5s infinite;/*3 en una peo no me deja pasar mas de dos keyframes*/
+
+}
+
+
+
+/*
+se usa para agregar animaciones
+@keyframes NOMBRE{
+    from{desde}
+    to{hasta}
+}
+
+propiedades que debemos agregar a la rgla css
+
+    animation-name: colores;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+
+*/

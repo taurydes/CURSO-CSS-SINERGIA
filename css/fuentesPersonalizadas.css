@@ -1,0 +1,23 @@
+/*Para buscar las fuentes usamos el GoogleFounts en goole y allí nos apareceran muchisimas funtes gratis*/
+/* para aggregar la fuente debemos hacerlo con un selector especial */
+/*tambien podemos hacerlo cargando el link desde la web con la etiqueta link, en la página de googleFont aparece el link para agg el estyle*/
+@font-face{
+    font-family: "Merriweather-LightItalic";
+    src: url(../Font-letters/Merriweather-LightItalic.ttf);
+}
+@font-face{
+    font-family: "laquetal";
+    src: url(../Font-letters/Merriweather-BoldItalic.ttf);
+}
+body{
+    font-family: laquetal ;
+}
+
+p{
+    font-family: Merriweather-LightItalic ;
+}
+
+/*@font-face{
+    font-family: "NOMBRE-DE-FUENTE";
+    src: url(UBICACION);
+}*/

@@ -1,0 +1,20 @@
+.caja{
+    background: #ffaa5a;
+    width: 200px;
+    height: 200px;
+    /*transform: translate(200px,50px); *//*para aplicar transformaciones */
+    /* transform:scale(2,1); */
+    /* transform: rotate(20deg); */
+    /* transform: skew(200deg,50deg); */
+    /*tambien podemos asignar los 4 elementos a la misma propeda en una linea*/
+}
+
+
+/*
+Cosas que podemos hacer con transform
+ -Trasladar elementos => transform: translate(izquierda a derecha, arriba hacia abajo)
+ -Escalar elementos =>  transform:scale(x,y); Agranda el tamaño 
+ -Rotar elementos => transform: rotate(20deg); en sentido agujas del reloj
+ -sesgar elementos =>  transform: skew(200deg,50deg);
+
+*/

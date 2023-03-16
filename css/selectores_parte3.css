@@ -1,0 +1,53 @@
+/* selector universal */
+/* la jerarquía de selectores sería id > class > etiquetas */
+/* *{
+    color: aqua;
+} */
+
+h1,h2,h3,h4,h5,h6{ /*selectores de grupo, si separamos por coma podemos seleccionar varias etiquetas*/
+    color: green;
+}
+
+div p{/* Selectores decendiente, si separamos con un espacio nos referimos al hijo*/
+
+    color: blue;
+}
+div article p{ /* acá desendimos a dos niveles*/
+    color: yellowgreen;
+}
+
+.rojo{/*selectores de clase, las clases se definen escribiendo un punto seguido del nombre de la clase, luego debemos asignarle al elemento html la clase*/
+
+    color: red;
+    font-size: 50px;
+}
+
+.tamano40{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#id{/*otro selector importante es el selector de id, se define colocando un hagstag seguido del nombre del elemento,luego debemos asignarle al elemento html un id */
+
+}
+
+div > p{ /*Selectores de Hijos o selectores directo, sirve para seleccionar al hijo directo dentro de una etiqueta*/
+
+    color: chocolate;
+}
+
+input[type = "Text"]{ /*selector de atributos, sirve para seleccionar dependiendo los tipos del elemento*/
+
+    color: red;
+}
+
+/*HERENCIA*/
+body{/* etiqueta padre, cuando no se le dan propiedades css a la etiqueta hijo hereda todas la de su padre*/
+    color: black;
+}
+
+
+
+
+/* El selector univerlas es un selector identificado con un asterisco(*) y cualquier cambie que apliquemos a él se aplicará a todos los selectores */
+/* selectores de etiqueta, estos selectores se usan con el nombre de la etiqueta y se aplican a todas las etiquetas de ese tipo */

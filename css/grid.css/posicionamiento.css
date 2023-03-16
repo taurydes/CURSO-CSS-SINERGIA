@@ -1,0 +1,32 @@
+.contenedor{
+    display: grid;/*tipo grid*/
+    grid-gap: 20px;/*espaciado entre elementos*/
+    grid-template-columns: repeat(4,1fr);/*4 columnas con espacio equitativo*/
+    grid-template-rows: repeat(4,1fr);/*4 filar espacio equitativo*/
+
+}
+
+.contenedor .item{
+    background-color: #f48938;
+    /*para esta practica podemos revisar la consola el navegador para ubicarnos, en la parte de elementos/diseño/activar la casilla de división*/
+    grid-column-start: 3;/*elegir de donde quiere que comience*/
+    grid-column-end: 4;/*elegir de donde quiere que termine*/
+    /*si usamos el last pudieramos decir que siempre llegue al final, tambien pudieramos definir que termine en -1*/
+    grid-row-start: 2;/*elegir de donde quiere que comience*/
+    grid-row-end: 3;/*elegir de donde quiere que termine*/
+
+    /* podemos usargrid-colum: donde comienza / donde temrina y le pasamos los dos parametros */
+    /* grid-column: 1/ span 3; con span le decimos que ocupe 3 columnas  */
+    /* grid-row: 1/ span 3;  con span le decimos que ocupe 3 filas */
+    
+    grid-area: 3/2/3/3;
+}
+
+/*  
+grid-area:  
+
+primer parametro_ grid-row-start
+segundo parametro: grid-colum-start
+tercer parametro: grid-row-end
+cuarto parametro: grid-colum-end
+*/

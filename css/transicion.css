@@ -1,0 +1,29 @@
+.caja{
+    width: 200px;
+    height: 200px;
+    background: hsl(232, 47%, 25%);
+    transition: all 0.7s ease;/*propiedad de transición*/
+    /*para hacer que cuando el mouse tenga un tiempo sobre el elemento ella cambie*/
+    /*transition-delay: 2s;/*con esto le desimos que tarde 2 segundo en comenzar*/
+}
+.caja:hover{
+    background-color: #9eb3c2;
+    /* width: 400px; */
+    transform: rotate(90deg);
+    cursor:wait;/*con esta propiedad al pasar por encima el siguiente cursor, sale la manito*/
+
+}
+/* 
+la propieda consta de 4 parametros
+transition: (elemento al cual aplicaremos,tiempo(s),velocidad de curva)
+transition-delay: 2s;/*para definir cuanto tiempo tarda el evento en realizarse
+si escribimos all, nos referimos a todas las propiedades del elemento
+
+Velocidad de la curva
+    ease -inicio lento, despes rapido y termina lento
+    linear - misma velocidad de inicio a fin
+    easi-in - inicio lento
+    ease-out - final lento
+    easi-in-out -inicio lento y final lento
+*/
+

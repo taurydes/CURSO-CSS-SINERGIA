@@ -1,0 +1,23 @@
+.contenedor{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 200px 100px 200px;
+
+    /*para definir cual será el tamaño por defecto de los elementos que agg de forma implicita usaremos el grid-auto-rows */
+    /* grid-auto-rows: 400px; */
+    grid-auto-flow:row dense; /*con esta propiedad definimos donde se creará el objeto cada vez q se agregue uno nuevo*/
+    /* grid-auto-columns: 150px;  luego de esto si podremos utilizar el auto-column*/ 
+}
+
+.contenedor .item2{
+    grid-column: span 2;/*decimos que todos los que sean de esta clase ocupen 2 columnas*/
+    background-color: brown;
+}
+.contenedor .item3{
+    grid-column: span 3;/*decimos que todos los que sean de esta clase ocupen 2 columnas*/
+    background-color: rgb(55, 228, 12);
+}
+/*para evitar los espacios vacios usamos la propiedad grid-auto-flow: con dos parametros
+grid-auto-flow: row dense
+*/

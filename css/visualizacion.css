@@ -1,0 +1,46 @@
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div, a, p{
+    background: #ccc;
+}
+div{
+   /* display: none;*//* con none hacemos que se elimine directamente en pantalla*/
+  /*  visibility: hidden;/* Sirve para ocultar elementos, tenemos hidden y visible*/
+   /* visibility: visible;/* Sirve para ocultar elementos, tenemos hidden y visible*/
+    width: 200px;
+    height: 200px;
+    background: rgb(32,61,76);
+    color: #dd0000;
+    overflow: hidden;/* con esta propiedad hacemos los que salga del div no se muestro sobresalga pero por dentro del contenedor*/
+    overflow: auto;/* al agregar el auto nos permite mostrar todo el contenido*/
+}
+.posi{
+    width: 200px;
+    height: 200px;
+    z-index: 1;/*con esta propiedad de profundidad damos un nivel de posicionamiento en un elemento mientras más grande mas al frente y mas bajo el numero mas al fondo*/
+    position: relative;
+    top: -150px;
+    left: 80px;
+    opacity: 0.8;
+    color: white;
+    font-size: 30px;
+    background-color: #c57a7a;
+}
+.posi2{
+    width: 200px;
+    height: 200px;
+    z-index: 2;/*con esta propiedad de profundidad damos un nivel de posicionamiento en un elemento mientras más grande mas al frente y mas bajo el numero mas al fondo*/
+    position: relative;
+    top: -300px;
+    left: 200px;
+    opacity: 0.8;
+    color: white;
+    font-size: 30px;
+    background-color: blueviolet;
+    
+}
+
+/* display [inline | block | none | inline-clock | flex] */

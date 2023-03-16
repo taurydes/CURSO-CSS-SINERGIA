@@ -1,0 +1,13 @@
+.contenedor{
+    display: grid;/*creando la grid*/
+    /*grid-template-columns: 1fr 1fr 1fr;/*propiedad para crear columna, se define el tamaño y con espacio dividimos*/
+    /*con el fr hacemos que ocupen el espacio vacío y lo hace de manera equitativa, funciona con las columnas*/
+    /* grid-template-rows: 150px 300px;propiedad para crear fila, se define el tamaño y con espacio dividimos */
+    grid-gap: 20px;/*par verificar la separación entre las columnas y filas*/
+    
+    /*video 3 función minmax()*/
+    grid-template-columns: minmax(150px, 1fr) 1fr;/*propiedad para agregar un min y un maximo, el minimo es bueno acotarlo, para el responsive*/
+    
+    grid-template-rows: minmax(2px, auto) 400px;/*propiedad para  adaptar el alto que pueda tener una columna dependiendo su contenido, se define el tamaño y con espacio dividimos*/
+   
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #1d1c1c;
+    /* background: linear-gradient(150deg, rgb(201, 146, 146),rgb(159, 206, 228) , rgb(64, 73, 64) 40%); */
+    /* background-repeat: no-repeat; */
+    background-size: 250%;
+}
+
+.contenedor{
+    /* width: 1000px; */
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    /*Para hacer responsi el sito web  se trabajan con porcentajes y establecemos el maximo que se moverá*/
+}
+header{
+    background-color: #FFF;
+    border-radius: 5px 5px 0 0;
+}
+
+header nav ul{
+    width: 100%;/*establecer que cubra todo el contenedor padre*/
+    overflow: hidden;/*para que todo lo que este fuera de los bordes lo oculte*/
+    list-style: none;/*quitar viñetas*/
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 20px;
+    color: black;
+}
+header nav ul li a:hover{
+    background-color: rgb(54, 51, 51);
+    color: white;
+}
+
+.main{
+    /* width: 700px; */
+    width: 70%;
+    background-color: #FFF;
+    /* border: solid black 7px; */
+    float: left;
+
+}
+.main .imagen{
+    width: 100%;
+}
+.main .imagen img{
+    width: 100%;
+    vertical-align: top;/*para corregir que la imagen no sobrepase los limites */
+}
+.main .post{
+    padding: 40px;
+    
+}
+.main .post article h2{
+    margin-bottom: 20px;
+    color: #424242;
+}
+.main .post article p{
+    margin-bottom: 20px; /*margin por debajo*/
+    line-height: 27px;/*separación entre líneas*/
+}
+aside{
+    /* width: 300px; */
+    width: 30%;
+       background-color: #161f26;
+    padding: 20px;
+    color: #FFF;    
+    float: left;
+    /* bottom: 1360.52px; */
+    border-radius: 0 0 5px 0;
+
+}
+aside .widget{
+    margin-bottom: 20px;
+}
+aside .widget .titulo{
+    color: #27cc18;
+    border-bottom: 1px solid #27cc18;
+    margin-bottom: 20px;
+}
+aside .widget ul{
+    list-style: none;
+}
+aside .widget ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    padding: 10px 0;
+}
+
+aside .widget ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+aside .widget ul li a:hover{
+    color: #8f8f8f;
+}
+aside .widget p{
+    line-height: 27px;
+}
+
+footer{
+    /* width: 1000px; */
+    width: 70%;
+    
+    background-color: #000000;
+    color: #FFF;
+    padding: 15px 0;
+    text-align: center;
+    clear: both;}
+.pie{
+    border-radius: 0 0 5px 5px;
+}
+.inicio{
+    border-radius: 5px 0 0 0;
+}
+
+/*mediaqueries, esto sirve para el responsive, para que cuando suceda algo se active*/
+@media screen and (max-width: 800px){/*condición*/
+    /*sentencia*/
+    .main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        border-radius: 0;
+    }
+    footer{
+        width: 100%;
+       
+    } 
+};   
+/*con JS vamos a poder mostrar el menú en reducido cuando se baje mucho el tamaño*/
+@media screen and (max-width: 470px){
+    
+} 

@@ -1,0 +1,28 @@
+body{
+    font-size: 15px;
+}
+
+p{
+    font-size: 1em;/*con esta propiedad tomamos el tamaño del contenedor padre*/
+    font-size: 2em;/*vemos que el coeficiente multiplica la expresión (2*em)  */
+}
+
+.contenedor_padre{
+    font-size: 20px;
+}
+
+.uno{
+    font-size: 1rem;/* con esta hacemos que tome el tamaño del cotenemos padre body*/
+}
+/*
+Unidades relativas
+    px - pixel
+    em - Relativa al tamaño de la fuente que tenga su elemento padre o el mas cercano
+    rem - Relativa al tamaño de fuente especificado en el body
+    % - porcentaje
+
+Unidades absolutas (estas no se usan xq las pantallas no se guían de ellas)
+    in - inches(pulgadas)
+    cm - centimetros
+    mm - milimetros
+*/

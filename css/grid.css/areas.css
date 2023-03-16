@@ -1,0 +1,64 @@
+.contenedor{
+    /*importante revisar las divisiones en la cosola del navegador para ver los cambiaos, en esta pratica activamos la casilla de mostrar nombre de area*/
+    display: grid;/*tipo grid*/
+    grid-gap: 20px;/*espaciado entre elementos*/
+    grid-template-columns: repeat(3,1fr);/*4 columnas con espacio equitativo*/
+    grid-template-rows: repeat(4,1fr);/*4 filar espacio equitativo*/
+    /*nueva propiedad grid-template-areas="nombre nombre nombre" "nombre2 nombre2 nombre2"; el asigna comenzando por el primero*/
+    grid-template-areas: "header header header"/*fila*/ /*cada palabra es una columna*/
+                         "contenido contenido sidebar"/*fila*/ /*cada palabra es una columna*/
+                         "contenido contenido sidebar"/*fila*/ /*cada palabra es una columna*/
+                         "footer footer footer"/*fila*/ /*cada palabra es una columna*/
+                         ;
+                         /*el nota cuando se llaman igual sabe que es el mismo*/
+}
+/* ahora con el nombre solo usamos la propiedad grid-area: nombre; estaría haciendo referencia a la división ya hecha*/
+.contenedor .header{
+    background-color: #f48938;
+    grid-area: header;/*nombre que definimos con el template el area*/
+}
+.contenedor .contenido{
+    background-color: #38f438;
+    grid-area: contenido;/*nombre que definimos con el template el area*/
+   
+}
+.contenedor .sidebar{
+    background-color: #423e3a;
+    grid-area: sidebar;/*nombre que definimos con el template el area*/
+    
+    
+}
+.contenedor .footer{
+    background-color: #ac1919;
+    grid-area: footer;/*nombre que definimos con el template el area*/
+
+} 
+
+/* .contenedor .header{
+    background-color: #f48938;
+    grid-column: 1 / last;
+}
+.contenedor .contenido{
+    background-color: #38f438;
+    grid-column: 1 / -2;
+    grid-row: 2/ span 2;
+}
+.contenedor .sidebar{
+    background-color: #423e3a;
+    grid-row: 2/ span 2;
+    
+}
+.contenedor .footer{
+    background-color: #ac1919;
+    grid-column: 1 / last;
+    grid-row: 4/last;
+
+} */
+/*  
+grid-area:  
+
+primer parametro_ grid-row-start
+segundo parametro: grid-colum-start
+tercer parametro: grid-row-end
+cuarto parametro: grid-colum-end
+*/

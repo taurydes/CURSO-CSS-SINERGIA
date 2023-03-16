@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* estas tres propiedades sirven para controlar los input xq cuando le damos el padding a los input se saldrían de la caja*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formulario{
+    background-color: #fff;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+.formulario input{
+    display: block;
+}
+
+.formulario input[type="text"],.formulario input[type="email"],.formulario textarea{
+width: 100%;
+padding: 20px;
+border-radius: 3px;
+border: 1px solid #226fc1;
+margin: 5px;
+font-size: 18px;
+
+}
+.formulario textarea{
+    /*con los min y max establecemos que el textarea llegue máximo al tamaño que le definimos*/
+    min-height: 120px;
+    max-height: 300px;
+    min-width: 100%;
+    max-width: 100%;
+}
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario textarea:focus{
+    border:2px solid #4fb560;
+}
+
+.formulario input[type="submit"]{
+    width: 200px;
+    margin: 0 auto;
+    background: none;
+    border: 1px solid #4fb560;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;/*con esta propiedad al pasar por encima el siguiente cursor, sale la manito*/
+    font-size: 16px;
+}
+
+.formulario input[type="submit"]:hover{
+    background-color: #4fb560;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    font-size: 50px;
+}

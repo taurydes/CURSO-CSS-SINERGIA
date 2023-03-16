@@ -1,0 +1,21 @@
+
+.caja{
+    width: 500px;
+    height: 500px;
+    background: rgb(57%, 20%, 90%);
+}
+#letra{
+    color: black;
+    opacity: 0.9;/* de 0 al 1 Con esta propiedad agregamos la opacidad de un elemento*/
+   
+
+}
+
+/*
+Hay 17 palabras clave que podemos usar: 
+aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, purplo, red, silver, teal, white, yellow
+
+- TGB Decfimal: rgb(215, 38, 61)
+- RGB Porcentual: rgb(84%, 15%, 24%)
+- RGB Hezadecimal: #D7263D
+*/

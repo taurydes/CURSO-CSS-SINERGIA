@@ -1,0 +1,35 @@
+/*
+Para esta practica podemos usar una pág web que nos ayude con los codigo de los colores en html 
+https://htmlcolorcodes.com/
+si usamos VSCode el asistente de vscode nos ayuda 
+Para la galería sde imagenes podemos usar páginas con imagenes libres de derechos de autor
+https://unsplash.com/es pagina para imagesnes en HD libres de derechos de autor
+
+tinypng con esta pagina podemos hacer que las imagenes se comprimas un poco y pesen menes
+https://tinypng.com/
+
+pagina para descargar imagenes de texturas 
+https://www.toptal.com/
+*/
+
+body{
+    background: #6480592c;/*fondo puro*/
+    background:url(../img/J0149118.JPG); /*con un background y colocando url podemos agregar una imagen al fondo*/
+    background-size: 500px; /*tamaño del fondo*/
+    background-repeat: no-repeat; /* Para que no se repita, tambien podemos repeat-x o repeat-y*/
+    background-attachment: scroll; /* por viene en scroll que quiere decir que la imagen se queda arriba cuando bajamos*/
+    /*para cambiar esto usaremos el fixed y así la imagen de fondó se movera cuando vamos bajando*/
+    background-attachment: fixed;
+    background-position: 500px; /*con esto movemos la imagen en ambos eje de cordenadas, si colocamos dos valos toma x,y*/
+
+    background-color: url(../img/J0149118.JPG) no-repeat fixed center; /* de esta manera podemos agg varias atributos en unasola linea*/
+    background-size: 500px;
+}
+
+.fondo{
+    background: url(../img/J0216153.JPG) no-repeat black;
+    width: 500px;
+    height: 300px;
+    background-size: 500px;
+}
+
